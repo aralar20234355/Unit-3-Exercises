@@ -1,0 +1,55 @@
+import java.util.Scanner;
+import java.io.*;
+public class GradePrinter
+{
+public static void main(String[] args)
+{
+Scanner in = new Scanner(System.in);
+System.out.println("Enter a letter grade:");
+String input = in.nextLine();
+double value = Grade(input);
+System.out.println("Numeric value: " + value);
+
+}
+}
+public static void Grade(String in)
+{
+double grade;
+if (input == "A+")
+{
+grade = 4.0;
+}
+else if (input == "A-")
+{
+grade = 3.7;
+}
+else if (input == "B+")
+{
+grade = 3.0;
+}
+else if (input == "B-")
+{
+grade = 2.7;
+}
+else if (input ==" C+")
+{
+grade = 2.0;
+}
+else if (input == "C-")
+{
+grade = 1.7;
+}
+else if (input == "D+")
+{
+grade = 2.0;
+}
+else if (input == "D-")
+{
+grade = 0.7;
+}
+else if(input == "F")
+{
+grade = 0.0;
+}
+return grade;
+}
